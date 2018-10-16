@@ -18,7 +18,7 @@ class MainPage extends Component {
                 <ol className="books-grid">
                   {this.props.books
                     .filter(book => book.shelf === 'currentlyReading')
-                    .map(book => <li key={book.id}> <Book newBook={book}/> </li>)}
+                    .map(book => <li key={book.id}> <Book newBook={book} moveBook={this.props.moveBook} currentLocation={'currentlyReading'}/> </li>)}
                 </ol>
               </div>
             </div>
@@ -28,7 +28,7 @@ class MainPage extends Component {
                 <ol className="books-grid">
                   {this.props.books
                     .filter(book => book.shelf === 'wantToRead')
-                    .map(book => <li key={book.id}> <Book newBook={book}/> </li>)}
+                    .map(book => <li key={book.id}> <Book newBook={book} moveBook={this.props.moveBook} currentLocation={'wantToRead'}/> </li>)}
                 </ol>
               </div>
             </div>
@@ -38,7 +38,7 @@ class MainPage extends Component {
                 <ol className="books-grid">
                   {this.props.books
                     .filter(book => book.shelf === 'read')
-                    .map(book => <li key={book.id}> <Book newBook={book}/> </li>)}
+                    .map(book => <li key={book.id}> <Book newBook={book} moveBook={this.props.moveBook} currentLocation={'read'}/> </li>)}
                 </ol>
               </div>
             </div>
