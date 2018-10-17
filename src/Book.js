@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class Book extends Component {
 
   render() {
+    let thumbnail = this.props.newBook.imageLinks ? this.props.newBook.imageLinks.thumbnail : '';
     return (
       <div className="book">
         <div className="book-top">
