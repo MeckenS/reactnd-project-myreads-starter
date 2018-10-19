@@ -2,9 +2,9 @@
 
 This application was created with React and is used to search for books and arrange them on one of three bookshelves including:
 
-## Currently Reading
-## Want To Read
-## Read
+* Currently Reading
+* Want To Read
+* Read
 
 # To run the project:
 
